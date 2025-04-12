@@ -41,6 +41,11 @@ namespace AnalyticsTest
 
         */
        // IEnumerable<Product> products=GetAllProductsFromMySqlDatabase();
+
+        Product p = new Product { ID = 7, Title = "Jasmine", Description = "Jasmine is a genus of shrubs and vines in the olive family", UnitPrice = 26, Category = "Flower", Quantity = 2000 ,Likes=4000 };
+        bool status = ProductDBManager.Insert(p);
+        Console.WriteLine("Status : "+status);
+        
         Console.WriteLine("geting all Products");
         IEnumerable<Product> products=ProductDBManager.GetAll();
 

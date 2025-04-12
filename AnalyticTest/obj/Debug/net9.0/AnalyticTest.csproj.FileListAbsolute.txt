@@ -34,3 +34,4 @@ D:\TAP\OnlineShopping\AnalyticTest\bin\Debug\net9.0\runtimes\win\lib\net8.0\Syst
 D:\TAP\OnlineShopping\AnalyticTest\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 D:\TAP\OnlineShopping\AnalyticTest\obj\Debug\net9.0\AnalyticTest.csproj.AssemblyReference.cache
 D:\TAP\OnlineShopping\AnalyticTest\obj\Debug\net9.0\Analytic.3C47EF7F.Up2Date
+D:\TAP\OnlineShopping\AnalyticTest\obj\Debug\net9.0\AnalyticTest.sourcelink.json

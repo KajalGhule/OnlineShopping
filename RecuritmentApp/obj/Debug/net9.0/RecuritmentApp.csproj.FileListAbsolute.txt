@@ -1,0 +1,15 @@
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.AssemblyInfoInputs.cache
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.AssemblyInfo.cs
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.csproj.CoreCompileInputs.cache
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.sourcelink.json
+D:\TAP\OnlineShopping\RecuritmentApp\bin\Debug\net9.0\RecuritmentApp.exe
+D:\TAP\OnlineShopping\RecuritmentApp\bin\Debug\net9.0\RecuritmentApp.deps.json
+D:\TAP\OnlineShopping\RecuritmentApp\bin\Debug\net9.0\RecuritmentApp.runtimeconfig.json
+D:\TAP\OnlineShopping\RecuritmentApp\bin\Debug\net9.0\RecuritmentApp.dll
+D:\TAP\OnlineShopping\RecuritmentApp\bin\Debug\net9.0\RecuritmentApp.pdb
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.dll
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\refint\RecuritmentApp.dll
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.pdb
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\RecuritmentApp.genruntimeconfig.cache
+D:\TAP\OnlineShopping\RecuritmentApp\obj\Debug\net9.0\ref\RecuritmentApp.dll

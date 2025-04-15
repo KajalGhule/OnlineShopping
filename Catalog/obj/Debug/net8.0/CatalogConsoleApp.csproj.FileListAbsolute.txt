@@ -1,0 +1,14 @@
+D:\TAP\CatalogC#\bin\Debug\net8.0\CatalogConsoleApp.exe
+D:\TAP\CatalogC#\bin\Debug\net8.0\CatalogConsoleApp.deps.json
+D:\TAP\CatalogC#\bin\Debug\net8.0\CatalogConsoleApp.runtimeconfig.json
+D:\TAP\CatalogC#\bin\Debug\net8.0\CatalogConsoleApp.dll
+D:\TAP\CatalogC#\bin\Debug\net8.0\CatalogConsoleApp.pdb
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.AssemblyInfoInputs.cache
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.AssemblyInfo.cs
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.csproj.CoreCompileInputs.cache
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.dll
+D:\TAP\CatalogC#\obj\Debug\net8.0\refint\CatalogConsoleApp.dll
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.pdb
+D:\TAP\CatalogC#\obj\Debug\net8.0\CatalogConsoleApp.genruntimeconfig.cache
+D:\TAP\CatalogC#\obj\Debug\net8.0\ref\CatalogConsoleApp.dll

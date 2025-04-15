@@ -1,0 +1,39 @@
+﻿  Catalog.cpp
+  Product.cpp
+  Generating Code...
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(5,17): error C2062: type 'int' unexpected
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(5,23): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(6,17): error C2146: syntax error: missing ':' before identifier 'string'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(6,29): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(7,17): error C2146: syntax error: missing ':' before identifier 'string'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(7,28): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(8,17): error C2062: type 'double' unexpected
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(8,33): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(9,17): error C2062: type 'int' unexpected
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(9,29): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(13,1): error C2059: syntax error: '}'
+  (compiling source file 'Product.cpp')
+  
+D:\TAP\OnlineShopping\Project\Catalog\Product.h(13,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'Product.cpp')
+  

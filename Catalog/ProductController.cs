@@ -23,5 +23,15 @@ namespace CatalogConsoleApp
         {
             productService.Display();
         }
+        public double GetTotalPrice(int id)
+        {
+            double totalPrice = productService.GetTotalPrice(id);
+            return totalPrice;
+        }
+        public double GetDiscountedPrice(int id, int discount)
+        {
+            double discounterPrice = productService.GetDiscountedPrice(id, discount);
+            return discounterPrice;
+        }
     }
 }

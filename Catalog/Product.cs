@@ -93,5 +93,14 @@ namespace CatalogConsoleApp
         {
             Console.WriteLine(this.ToString());
         }
+        public double GetTotalPrice()
+        {
+            return unitPrice * quantity;
+        }
+        public double GetDiscountedPrice(double discount)
+        {
+            double TotalPrice = GetTotalPrice();
+            return TotalPrice - (TotalPrice * discount / 100);
+        }
     }
 }

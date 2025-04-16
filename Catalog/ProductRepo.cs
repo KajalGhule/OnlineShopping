@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -60,6 +61,38 @@ namespace CatalogConsoleApp
                 item.Display();
                 Console.WriteLine("---------------------------------------");
             }
+        }
+        public double GetTotalPrice(int id)
+        {
+            Product product = GetProduct(id);
+            if (product != null)
+            {
+                double totalPrice = product.GetTotalPrice();   
+                return totalPrice;
+            }
+            return 0;
+        }
+        public double GetDiscountedPrice(int id, int discount)
+        {
+            Product product = GetProduct(id);
+            if (product != null)
+            {
+                double totalPrice = product.GetDiscountedPrice(discount);
+                return totalPrice;
+            }
+            return 0;
+        }
+
+        public Product GetProduct(int id)
+        {
+            foreach (var item in productsList)
+            {
+                if (item.GetId() == id)
+                { 
+                    return item;
+                }
+            }
+            return null;
         }
 
     }

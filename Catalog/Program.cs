@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 
 namespace CatalogConsoleApp
 {
@@ -12,7 +13,8 @@ namespace CatalogConsoleApp
             Console.WriteLine("2. Display All Products");
             Console.WriteLine("3. Update Product");
             Console.WriteLine("4. Remove Product");
-            Console.WriteLine("5. Exist");
+            Console.WriteLine("5. Total Price");
+            Console.WriteLine("6. Total Price With Discount");
             choose = Convert.ToInt32(Console.ReadLine());
             return choose;
         }
@@ -57,6 +59,20 @@ namespace CatalogConsoleApp
                         Console.WriteLine("Enter Id to Delete Product");
                         int i = Convert.ToInt32(Console.ReadLine());
                         productController.Delete(i);
+                        break;
+                    case 5:
+                        Console.WriteLine("Enter Product Id To Get Total Price");
+                        int productId = Convert.ToInt32(Console.ReadLine());
+                        double TotalPrice = productController.GetTotalPrice(productId);
+                        Console.WriteLine("Total Price is "+ TotalPrice);
+                        break;
+                    case 6:
+                        Console.WriteLine("Enter Product Id To Get Total Price");
+                        int prodId = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter Discount %");
+                        int discount = Convert.ToInt32(Console.ReadLine());
+                        double TotalPriceWithDiscount = productController.GetDiscountedPrice(prodId,discount);
+                        Console.WriteLine("Total Price is " + TotalPriceWithDiscount);
                         break;
                     default:
 

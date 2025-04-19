@@ -1,0 +1,52 @@
+## Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## OS generated
+.DS_Store
+Thumbs.db
+
+## Visual Studio
+.vscode/
+*.vspscc
+*.vssscc
+.vs/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET
+wwwroot/lib/
+*.db
+*.db-shm
+*.db-wal
+
+## Publish output
+publish/
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+## Rider
+.idea/
+*.sln.iml
+
+## Others
+*.swp
+*.bak
+*.tmp

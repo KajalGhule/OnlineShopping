@@ -26,4 +26,4 @@ Handler masterOperationManager = null; // Multicast
 masterOperationManager = operation1;
 masterOperationManager += operation2;
 masterOperationManager += operation3;
-masterOperationManager(); // One invokation multicast delegate
+masterOperationManager(); // One invokation multicast delegate 

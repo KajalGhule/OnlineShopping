@@ -23,6 +23,8 @@ namespace Banking
         {
             Balance = balance;
         }
+
+        //Observing Balance
         public void Monitor()
         {
             if (Balance < 500)

@@ -3,8 +3,10 @@
 
 namespace Banking
 {
+    //subscriber 1
     public static class Government
     {
+        // always contain handler
         public static void PayIncomeTax()
         {
             Console.WriteLine("PayIncomeTax");
@@ -18,6 +20,7 @@ namespace Banking
             Console.WriteLine("PayServiceTax ");
         }
     }
+    //subscriber 2
     public static class HDFC
     {
         public static void BlockAccount()

@@ -11,11 +11,7 @@ namespace TransflowerWebApp.Controllers
 {
     //is a kind of class 
     // for defining action methods for each incomming HTTP Request
-    // http://localhost:5000/Products/index
-    // http://localhost:5000/Products/details
-    // http://localhost:5000/Products/insert
-    // http://localhost:5000/Products/update
-
+    
     public class ProductsController : Controller
     {
         private readonly ILogger<ProductsController> _logger;
@@ -41,9 +37,6 @@ namespace TransflowerWebApp.Controllers
 
             ViewData["allProducts"]=products;
           
-            /*List<Product> allProducts= Catalog.ProductManager.GetAllProducts();
-            this.ViewData["products"]=allProducts;
-            */
 
             return View();
         }

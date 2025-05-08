@@ -32,12 +32,12 @@ Product product = await repo.GetById(3);
         }
 
 // UPDATE
-    // if (product != null)
-    //     {
-    //         product.Price = 899.99M;
-    //         await repo.Update(product);
-    //         Console.WriteLine("Product updated.");
-    //     }
+    if (product != null)
+        {
+            product.Price = 899.99M;
+            await repo.Update(product);
+            Console.WriteLine("Product updated.");
+        }
 
 // DELETE
     // if (product != null)

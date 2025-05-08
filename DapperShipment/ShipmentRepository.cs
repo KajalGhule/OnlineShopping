@@ -26,7 +26,7 @@ public class ShipmentRepository : IShipmentRepository
         }
 
 
-        public Shipment GetById(int id)
+        public async Task<Shipment> GetById(int id)
         {
             // using var db = Connection;
             // return db.QueryFirstOrDefault<Shipment>("SELECT * FROM Shipments WHERE Id = @Id", new { Id = id });
@@ -42,7 +42,7 @@ public class ShipmentRepository : IShipmentRepository
             return shipment;
         }
 
-        public void Add(Shipment shipment)
+        public async void Add(Shipment shipment)
         {
             using var db = Connection;
             var sql = @"INSERT INTO Shipments 
@@ -52,7 +52,7 @@ public class ShipmentRepository : IShipmentRepository
             db.Execute(sql, shipment);
         }
 
-        public void Update(Shipment shipment)
+        public async Task<bool> Update(Shipment shipment)
         {
             using var db = Connection;
             var sql = @"UPDATE Shipments SET 
@@ -65,13 +65,16 @@ public class ShipmentRepository : IShipmentRepository
                 Carrier = @Carrier,
                 TrackingNumber = @TrackingNumber
                 WHERE Id = @Id";
-            db.Execute(sql, shipment);
+            // db.Execute(sql, shipment);
+            var rowsAffected = await db.ExecuteAsync(sql, shipment);
+            return rowsAffected > 0;
         }
 
-        public void Delete(int id)
+        public async Task<bool> Delete(int id)
         {
             using var db = Connection;
-            db.Execute("DELETE FROM Shipments WHERE Id = @Id", new { Id = id });
+            var rowsAffected =  db.Execute("DELETE FROM Shipments WHERE Id = @Id", new { Id = id });
+            return rowsAffected > 0;
         }
     }
     

@@ -73,7 +73,7 @@ public class ShipmentRepository : IShipmentRepository
         public async Task<bool> Delete(int id)
         {
             using var db = Connection;
-            var rowsAffected =  db.Execute("DELETE FROM Shipments WHERE Id = @Id", new { Id = id });
+            var rowsAffected = await db.ExecuteAsync("DELETE FROM Shipments WHERE Id = @Id", new { Id = id });
             return rowsAffected > 0;
         }
     }

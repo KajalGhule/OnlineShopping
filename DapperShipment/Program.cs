@@ -1,33 +1,43 @@
 ﻿using ShipmentLib;
 using ShipmentRerpository.Repository;
+using Controllers.ShipmentController;
+using Services.ShipmentService;
 string connectionString = "server=localhost;user=root;database=products;password=manager";
 IShipmentRepository repo = new ShipmentRepository(connectionString);
 
-// Shipment shipment = new Shipment
-// {
-//     ShipmentNumber = "SHP2001",
-//     Origin = "Delhi",
-//     Destination = "Hyderabad",
-//     ShipmentDate = DateTime.Now,
-//     DeliveryDate = DateTime.Now.AddDays(3),
-//     Status = "Scheduled",
-//     Carrier = "BlueDart",
-//     TrackingNumber = "TRK123"
-// };
+IShipmentService service = new ShipmentService(repo);
+ShipmentController controller = new ShipmentController(service);
 
-// repo.Add(shipment);
-// Console.WriteLine("Shipment Added.");
+Shipment shipment = new Shipment
+{
+    ShipmentNumber = "SHP2011",
+    Origin = "Pune",
+    Destination = "Kerala",
+    ShipmentDate = DateTime.Now,
+    DeliveryDate = DateTime.Now.AddDays(3),
+    Status = "Scheduled",
+    Carrier = "BlueDart",
+    TrackingNumber = "TRK125"
+};
 
-List<Shipment> shipments = await repo.GetAll();
+// controller.Add(shipment);
+
+List<Shipment> shipments = await controller.GetAll();
 foreach(Shipment ship in shipments) {
      Console.WriteLine($"{ship.Destination}: {ship.Origin}");
 }
 
-Shipment getShipment = await repo.GetById(2);
+Shipment getShipment = await controller.GetById(1);
 Console.WriteLine($"{getShipment.Id}:{getShipment.Destination}");
 
 if(getShipment != null) {
      getShipment.Status = "Delivered";
-     await repo.Update(getShipment);
+     await controller.Update(getShipment);
      Console.WriteLine("get shipment Updated");
+}
+
+
+if(getShipment != null) {
+     await controller.Delete(getShipment.Id);
+     Console.WriteLine("get shipment deleted");     
 }

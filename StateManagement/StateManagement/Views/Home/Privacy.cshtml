@@ -1,0 +1,20 @@
+﻿@using StateManagement.Controllers;
+
+@{
+    ViewData["Title"] = "Session Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to show Session data</p>
+
+<p>@ViewBag.data</p>
+<hr />
+<p>Session Data</p>
+
+@{
+    Cart theCart = ViewData["cart"] as Cart;
+    foreach(string item in theCart.Items)
+    {
+        <p>@item</p>
+    }
+}

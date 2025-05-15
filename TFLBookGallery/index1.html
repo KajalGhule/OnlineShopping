@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Gallery</title>
+</head>
+
+<body>
+    <center>
+        <marquee behavior="alternate" direction="right">
+            <img src="/image/many-children-reading-books-vector.jpg" width="300" height="300" alt="Book logo">
+            <img src="/image/vector-many-children-reading-books.jpg" width="300" height="300" alt="Book logo">
+        </marquee>
+        
+    </center>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 220px;
+    }
+
+    .moving-strip {
+      position: absolute;
+      display: flex;
+      animation: moveAlternate 6s linear infinite alternate;
+    }
+
+    .moving-strip img {
+      width: 300px;
+      height: 200px;
+    }
+
+    @keyframes moveAlternate {
+      0% { left: 0; }
+      100% { left: calc(100% - 600px); } /* Adjust based on image count * width */
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="moving-strip">
+            <img src="/image/many-children-reading-books-vector.jpg" alt="Book 1">
+            <img src="/image/many-children-reading-books-vector.jpg" alt="Book 2">
+            <img src="/image/many-children-reading-books-vector.jpg" alt="Book 1">
+            <img src="/image/many-children-reading-books-vector.jpg" alt="Book 2">
+            <img src="/image/many-children-reading-books-vector.jpg" alt="Book 1">
+            <img src="/image/many-children-reading-books-vector.jpg" alt="Book 2">
+        </div>
+    </div>
+</body>
+</html>

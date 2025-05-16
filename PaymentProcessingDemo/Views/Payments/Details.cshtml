@@ -1,0 +1,47 @@
+@using Core.Models;
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product Details</h2>
+@{
+
+    Payment thePayment=ViewData["payment"] as Payment;
+}
+        <table style="font-family:Arial">
+            <th>
+                <td></td>
+                
+                <td></td>
+            </th>
+            <tr>
+                <td><b>Payment Id :</b></td>
+                <td>@thePayment.Id</td>
+            </tr>
+            <tr>
+                <td><b>Date :</b></td>
+                <td> @thePayment.PaymentDate </td>
+            </tr>
+            <tr>
+                <td><b>Order :</b></td>
+                <td>@thePayment.OrderId</td>
+            </tr>
+            <tr>
+                <td><b>Payment Mode :</b></td>
+                <td>@thePayment.PaymentMode</td>
+            </tr>
+
+                <td><b>Amount :</b></td>
+                <td>@thePayment.Amount</td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.ActionLink("Update", "Update", "Payments", new { id = thePayment.Id }, "")
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", "Payments", new { id = thePayment.Id }, "")
+                </td>
+            </tr>
+        </table>
+
